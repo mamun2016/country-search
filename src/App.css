@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.country {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  padding: 0 20px 20px;
+  transition: 0.2s;
+}
+
+.country:hover {
+  transform: scale(1.05);
+}
+
+.flag {
+  margin: 0;
+}
+
+.flag img {
+  width: 100%;
+}
+
+.button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.imput-field {
+  padding: 0 10px;
+  height: 40px;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
